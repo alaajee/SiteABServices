@@ -1,0 +1,7 @@
+.moving-bg {
+    background-image: url('images/LOGO_VIDE.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: bg-scroll 30s linear infinite;
+  }
+ 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="bg-white--00 text-black p-6">
+            <h1 class="text-3l font-bold">Conciergerie Airbnb Grenoble</h1>
+          
+            <div class=" justify-end">
+                <img src="images/LOGO_VIDE.jpg" alt="Logo" class="h-16">
+            </div>
+            
+        </header>
+        <section class="first_section">
+            <div class="relative w-full">
+                <img src="images/pic.jpg" alt="Logo" class="w-full">
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 p-8 text-center">
+                    <h2 id="line1" 
+                        class="text-4xl font-extrabold opacity-0 transition-opacity duration-700 bg-gradient-to-r from-gray-400 to-green-400 bg-clip-text text-transparent drop-shadow-lg">
+                      Conciergerie Airbnb à Grenoble
+                    </h2>
+                    <p id="line2" 
+                       class="mt-6 max-w-lg text-white text-lg opacity-0 transition-opacity duration-700 drop-shadow-md">
+                      Votre partenaire de confiance pour une gestion Airbnb sans souci à Grenoble.
+                    </p>
+                  </div>
+                  
+              </div>
+              
+              <script>
+                // Affiche ligne 1 puis ligne 2 avec délai
+                setTimeout(() => {
+                  document.getElementById('line1').classList.remove('opacity-0');
+                }, 500); // ligne 1 apparaît après 0.5s
+              
+                setTimeout(() => {
+                  document.getElementById('line2').classList.remove('opacity-0');
+                }, 1000); // ligne 2 apparaît après 1.5s
+              </script>
+              
+              
+        </section>
+        <section>
+            <div class="container mx-auto p-6 max-w-4xl">
+              <h2 id="title" class="text-3xl font-extrabold mb-6 opacity-0 transition-opacity duration-700 text-gray-900 dark:text-white">
+                About Us
+              </h2>
+          
+              <p id="desc" class="mb-6 text-lg text-gray-700 dark:text-gray-300 opacity-0 transition-opacity duration-700 leading-relaxed">
+                Objectif : Prendre en charge complètement ou partiellement la gestion locative de Airbnb.
+                Les propriétaires ont le choix entre 2 formules adaptées à leurs besoins.
+              </p>
+          
+              <div id="formules" class="opacity-0 transition-opacity duration-700 space-y-8">
+                <!-- Formule All Inclusive -->
+                <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+                  <h3 class="text-2xl font-semibold mb-3 text-blue-600 dark:text-blue-400">Formule All Inclusive</h3>
+                  <p class="text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    Cette formule prend en charge intégralement la gestion locative : ménage, check-in & check-out, accueil et conseils au locataire, gestion des imprévus, planning des locations, et gestion des consommables (sacs poubelle, lessive, papier toilette, etc.).
+                  </p>
+                  <p class="text-gray-600 dark:text-gray-400 italic">
+                    Le propriétaire n’a rien à faire et nous délègue absolument toute la gestion.
+                  </p>
+                </div>
+          
+                <!-- Formule À la Carte -->
+                <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+                  <h3 class="text-2xl font-semibold mb-3 text-green-600 dark:text-green-400">Formule « À la Carte »</h3>
+                  <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Le propriétaire peut choisir de nous déléguer uniquement certaines tâches, comme le ménage avant chaque nouveau locataire ou le changement de draps, selon ses besoins spécifiques.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <script>
+            // Animation fade-in progressive
+            function fadeInElement(el, delay) {
+              setTimeout(() => {
+                el.classList.remove('opacity-0');
+              }, delay);
+            }
+          
+            window.addEventListener('DOMContentLoaded', () => {
+              const title = document.getElementById('title');
+              const desc = document.getElementById('desc');
+              const formules = document.getElementById('formules');
+          
+              fadeInElement(title, 300);
+              fadeInElement(desc, 800);
+              fadeInElement(formules, 1300);
+            });
+          </script>
+          
+          
+       
+</html>
