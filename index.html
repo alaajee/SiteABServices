@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AB Conciergerie</title>
+    <title>AB Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -11,7 +11,7 @@
 
   <body class="bg-[#FFF8F0] text-[#1a1a1a]">
     <header class="flex items-center justify-between p-6 bg-[#f5e9d9] shadow">
-      <h1 class="text-2xl font-bold text-[#5C4033]">AB Conciergerie</h1>
+      <h1 class="text-2xl font-bold text-[#5C4033]">AB Services</h1>
       <img src="images/LOGO.jpg" alt="Logo" class="h-20 w-20 rounded-full border border-[#5C4033]" />
     </header>
 
@@ -71,9 +71,12 @@
             <p class="text-[#7b6651] italic">
               Le propriétaire n’a rien à faire et nous délègue absolument toute la gestion.
             </p>
-            <button class="mt-4 px-4 py-2 bg-[#4b2e2e] text-white rounded hover:bg-[#2f1c1c] transition">
+            <a
+              href="all-inclusive.html"
+              class="inline-block mt-4 px-4 py-2 bg-[#4b2e2e] text-white rounded hover:bg-[#2f1c1c] transition"
+            >
               En savoir plus
-            </button>
+          </a>
           </div>
 
           <!-- Formule À la Carte -->
@@ -82,9 +85,12 @@
             <p class="text-[#3b2f2f] leading-relaxed">
               Le propriétaire peut choisir de nous déléguer uniquement certaines tâches, comme le ménage avant chaque nouveau locataire ou le changement de draps, selon ses besoins spécifiques.
             </p>
-            <button class="mt-4 px-4 py-2 bg-[#4b2e2e] text-white rounded hover:bg-[#2f1c1c] transition">
+            <a
+              href="a-la-carte.html"
+              class="inline-block mt-4 px-4 py-2 bg-[#4b2e2e] text-white rounded hover:bg-[#2f1c1c] transition"
+            >
               En savoir plus
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -99,9 +105,146 @@
 
       window.addEventListener('DOMContentLoaded', () => {
         fadeInElement(document.getElementById('title'), 1300);
-        fadeInElement(document.getElementById('desc'), 1800);
-        fadeInElement(document.getElementById('formules'), 2000);
+        fadeInElement(document.getElementById('desc'), 1600);
+        fadeInElement(document.getElementById('formules'), 1800);
       });
     </script>
+
+<section class="bg-black p-12 mt-12 text-white max-w-6xl mx-auto">
+  <h2
+    class="text-4xl font-extrabold text-center mb-12 opacity-0 transform translate-y-8 transition duration-700"
+    id="section-title"
+  >
+    Les défis majeurs des propriétaires Airbnb
+  </h2>
+
+  <div
+    class="flex flex-col md:flex-row gap-10"
+    id="cards-container"
+  >
+    <!-- Cadre 1 -->
+    <div
+      class="flex-1 bg-gray-900 rounded-lg p-8 text-center shadow-lg opacity-0 transform translate-y-12 transition duration-700 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+    >
+      <div class="text-5xl mb-5 animate-bounce">🛠️</div>
+      <h3 class="text-3xl font-semibold mb-4">Une charge de travail énorme</h3>
+      <p class="text-lg leading-relaxed">
+        Entre la gestion des réservations, la communication avec les voyageurs, et le traitement des imprévus, le quotidien peut vite devenir très lourd. Notre service allège cette charge en s'occupant de tout, du premier contact à la remise des clés.
+      </p>
+    </div>
+
+    <!-- Cadre 2 -->
+    <div
+      class="flex-1 bg-gray-900 rounded-lg p-8 text-center shadow-lg opacity-0 transform translate-y-12 transition duration-700 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+    >
+      <div class="text-5xl mb-5 animate-pulse">📉</div>
+      <h3 class="text-3xl font-semibold mb-4">Une rentabilité difficile à optimiser</h3>
+      <p class="text-lg leading-relaxed">
+        Trouver le bon équilibre entre prix, taux d'occupation et coûts d’entretien est un vrai défi. Grâce à notre expertise et outils, nous maximisons vos revenus tout en garantissant une expérience locataire irréprochable.
+      </p>
+    </div>
+
+    <!-- Cadre 3 -->
+    <div
+      class="flex-1 bg-gray-900 rounded-lg p-8 text-center shadow-lg opacity-0 transform translate-y-12 transition duration-700 hover:scale-105 hover:bg-gray-700 cursor-pointer"
+    >
+      <div class="text-5xl mb-5 animate-pulse">⌛</div>
+      <h3 class="text-3xl font-semibold mb-4">Un temps précieux à préserver</h3>
+      <p class="text-lg leading-relaxed">
+        La gestion locative demande beaucoup de disponibilité, souvent au détriment de votre temps personnel. Confiez-nous vos biens pour retrouver une vie équilibrée, sans stress et en toute sérénité.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Animation d’apparition progressive des titres et des cadres
+  window.addEventListener('DOMContentLoaded', () => {
+    const title = document.getElementById('section-title');
+    const cards = [...document.querySelectorAll('#cards-container > div')];
+
+    // Fade + slide du titre
+    setTimeout(() => {
+      title.classList.remove('opacity-0', 'translate-y-8');
+    }, 300);
+
+    // Apparition des cartes avec un léger délai entre elles
+    cards.forEach((card, i) => {
+      setTimeout(() => {
+        card.classList.remove('opacity-0', 'translate-y-12');
+      }, 700 + i * 300);
+    });
+  });
+</script>
+
+
+<section class="bg-[#f5e9d9] p-12 mt-12 max-w-4xl mx-auto rounded-lg shadow-lg">
+  <h2 class="text-3xl font-extrabold mb-6 text-[#5C4033] text-center">Entrez vos coordonnées</h2>
+
+  <form id="contact-form" class="flex flex-col gap-6 max-w-xl mx-auto">
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Votre nom"
+      required
+      class="p-3 rounded border border-[#a67b5b] focus:outline-none focus:ring-2 focus:ring-[#a67b5b]"
+    />
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Votre email"
+      required
+      class="p-3 rounded border border-[#a67b5b] focus:outline-none focus:ring-2 focus:ring-[#a67b5b]"
+    />
+
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="Votre message"
+      class="p-3 rounded border border-[#a67b5b] focus:outline-none focus:ring-2 focus:ring-[#a67b5b]"
+    ></textarea>
+
+    <button
+      type="submit"
+      class="bg-[#5C4033] hover:bg-[#4b2e2e] text-white font-semibold py-3 rounded transition"
+    >
+      Envoyer par email
+    </button>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email) {
+      alert('Veuillez renseigner au minimum votre nom et votre email.');
+      return;
+    }
+
+    // Préparer le mailto avec sujet et corps
+    const subject = encodeURIComponent(`Demande de contact de ${name}`);
+    const body = encodeURIComponent(`Nom : ${name}\nEmail : ${email}\n\nMessage :\n${message}`);
+
+    // Ouvrir le client mail avec mailto
+    window.location.href = `mailto:contact@abservices.com?subject=${subject}&body=${body}`;
+  });
+</script>
+
+
+
+
+
+    </section>
   </body>
 </html>
