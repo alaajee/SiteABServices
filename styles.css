@@ -4,7 +4,7 @@
     background-size: cover;
     animation: bg-scroll 30s linear infinite;
   }
-  header {
+  /* header {
     margin: 0;
     height: 20vh;
     background: linear-gradient(-45deg, #f5f5dc, #dec9ad, #c6a291, #b38a6b);
@@ -28,4 +28,4 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-  
+   */
