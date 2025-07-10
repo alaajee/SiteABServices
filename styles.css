@@ -5,3 +5,9 @@
     animation: bg-scroll 30s linear infinite;
   }
  
+  body {
+    background-image:  url('images/image.jpg');
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  }
