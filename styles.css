@@ -4,10 +4,28 @@
     background-size: cover;
     animation: bg-scroll 30s linear infinite;
   }
- 
-  body {
-    background-image:  url('images/image.jpg');
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+  header {
+    margin: 0;
+    height: 20vh;
+    background: linear-gradient(-45deg, #f5f5dc, #dec9ad, #c6a291, #b38a6b);
+    background-size: 100% 100% ;
+    animation: gradientMove 12s ease infinite;
+    background-repeat: no-repeat;
+    
   }
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #f5f5dc, #dec9ad, #c6a291, #b38a6b);
+    background-size: 700% 700% ;
+    animation: gradientMove 12s ease infinite;
+    background-repeat: no-repeat;
+    
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
