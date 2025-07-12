@@ -18,6 +18,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.3.0/build/css/intlTelInput.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.3.0/build/js/intlTelInput.min.js"></script>
   
   </head>
 
@@ -264,6 +266,7 @@
           type="Numero de téléphone"
           id="phone"
           name="phone"
+        
           placeholder="Votre numéro de téléphone"
           required 
           class="p-3 rounded border border-black focus:outline-none focus:ring-2 focus:ring-[#a67b5b]"
@@ -382,5 +385,15 @@
         
       </div>
 </footer>
+    <script>
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        initialCountry: "fr", // ou "auto" avec un IP lookup
+        preferredCountries: ["fr", "ma", "us"],
+        separateDialCode: true,
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.3.0/build/js/utils.js"
+      });
+    </script>
+
   </body>
 </html>
