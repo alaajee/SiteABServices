@@ -28,10 +28,10 @@
   
   @media screen and (max-width: 768px) {
     body {
-      background: #333; /* ✅ gris foncé, plus d'image */
+      background: #6a6969; /* ✅ gris foncé, plus d'image */
       background-attachment: cover;
       font-family: 'Lora', serif;
-      color: #3c2f27;
+      color: #696868;
       min-height: 100vh;
     }
   
