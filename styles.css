@@ -30,7 +30,7 @@
     body {
       background: url('images/image.avif') no-repeat center center;
       background-size: cover; /* Garde cover pour remplir l'écran */
-      background-attachment: fixed; /* ← CHANGÉ : scroll au lieu de fixed */
+      background-attachment: scroll; /* ← CHANGÉ : scroll au lieu de fixed */
       background-position: center center; /* ← AJOUTÉ : position centrée */
       font-family: 'Lora', serif;
       color: #3c2f27;
