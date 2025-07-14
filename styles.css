@@ -5,29 +5,31 @@
     animation: bg-scroll 30s linear infinite;
   }
   header {
-    margin: 0;
     height: 20vh;
-    background: linear-gradient(-45deg, #f5f5dc, #dec9ad, #c6a291, #b38a6b);
-    background-size: 100% 100% ;
-    animation: gradientMove 12s ease infinite;
-    background-repeat: no-repeat;
-    
-  }
-  body {
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(-45deg, #f5f5dc, #dec9ad, #c6a291, #b38a6b);
-    background-size: 700% 700% ;
-    animation: gradientMove 12s ease infinite;
-    background-repeat: no-repeat;
-    
+    background: 
+      linear-gradient(rgba(255, 250, 244, 0.8), rgba(230, 228, 226, 0.8)),
+      url('images/image6.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lora', serif;
+    color: #3c2f27;
   }
   
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: 
+      linear-gradient(rgba(255, 250, 244, 0.8), rgba(230, 228, 226, 0.8)),
+      url('images/image6.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lora', serif;
+    color: #3c2f27;
   }
+  
+  
   #phone {
-    width : 100%;
+    width: 100%;
   }
+  
