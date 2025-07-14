@@ -26,18 +26,18 @@
     color: #3c2f27;
   }
   
-  /* 📱 Pour téléphone (petits écrans) */
   @media screen and (max-width: 768px) {
     body {
-      background: url('images/image11.jpg') no-repeat ;
-      background-size: cover; /* Par défaut (PC) : couvre l'écran */
-      background-attachment: fixed;
+      background: url('images/image11.jpg') no-repeat center center;
+      background-size: cover; /* Garde cover pour remplir l'écran */
+      background-attachment: scroll; /* ← CHANGÉ : scroll au lieu de fixed */
+      background-position: center center; /* ← AJOUTÉ : position centrée */
       font-family: 'Lora', serif;
-      color: #3c2f27; 
-    
-      
+      color: #3c2f27;
+      min-height: 100vh; /* ← AJOUTÉ : hauteur minimale */
     }
-  
     
+    header {
+      height: 25vh; /* Optionnel : plus de hauteur sur mobile */
+    }
   }
-  
