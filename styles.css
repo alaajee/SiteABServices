@@ -29,7 +29,7 @@
   @media screen and (max-width: 768px) {
     body {
       background: #333; /* ✅ gris foncé, plus d'image */
-      background-attachment: scroll;
+      background-attachment: cover;
       font-family: 'Lora', serif;
       color: #3c2f27;
       min-height: 100vh;
