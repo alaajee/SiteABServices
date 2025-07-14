@@ -25,7 +25,9 @@
     font-family: 'Lora', serif;
     color: #3c2f27;
   }
-  
+  #phone {
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     body {
       background: #6a6969; /* ✅ gris foncé, plus d'image */
