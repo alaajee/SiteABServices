@@ -29,7 +29,7 @@
   @media screen and (max-width: 768px) {
     body {
       /*Color image.avif*/
-      background: grisen url('images/image11.jpg') no-repeat center center;
+      background: grisen no-repeat center center;
       background-size: cover; /* Garde cover pour remplir l'écran */
       background-attachment: scroll; /* ← CHANGÉ : scroll au lieu de fixed */
       background-position: center center; /* ← AJOUTÉ : position centrée */
