@@ -28,7 +28,7 @@
   
   @media screen and (max-width: 768px) {
     body {
-      background: url('images/image_phone.jpg') no-repeat center center;
+      background: url('images/image_phone2.jpg') no-repeat center center;
       background-size: cover; /* Garde cover pour remplir l'écran */
       background-attachment: fixed; /* ← CHANGÉ : scroll au lieu de fixed */
       background-position: center center; /* ← AJOUTÉ : position centrée */
